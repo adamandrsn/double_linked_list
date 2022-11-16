@@ -20,5 +20,9 @@ namespace double_linked_list
     class DoubleLinkedList
     {
         Node START;
+        public DoubleLinkedList()
+        {
+            START = null;
+        }
     }
 }
