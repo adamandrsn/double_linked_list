@@ -63,7 +63,6 @@ namespace double_linked_list
              * between which the new node is to be inserted.*/
             newnode.next = current;
             newnode.prev = previous;
-
             /*If the node is to be inserted at the end of the list.*/
             if (current == null)
             {
@@ -126,6 +125,28 @@ namespace double_linked_list
                     currentNode = currentNode.next)
                     Console.Write(currentNode.rollNumber + "   "
                         + currentNode.name + "\n");
+            }
+        }
+
+        /*traverses the list in the reverse direction*/
+        public void revtraverse()
+        {
+            if (listEmpty())
+                Console.WriteLine("\nList is empty");
+            else
+            {
+                Console.WriteLine("\nRecords in the ascending order of " +
+                    "roll numbers are:\n");
+                Node currentNode;
+                for (currentNode = START; currentNode != null;
+                    currentNode = currentNode.next)
+                { }
+                while (currentNode != null)
+                {
+                    Console.Write(currentNode.rollNumber + "   "
+                        + currentNode.name + "\n");
+                    currentNode = currentNode.prev;
+                }
             }
         }
     }
