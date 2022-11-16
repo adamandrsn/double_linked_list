@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace double_linked_list
 {
@@ -77,5 +73,7 @@ namespace double_linked_list
             current.prev = newnode;
             previous.next = newnode;
         }
+
+
     }
 }
